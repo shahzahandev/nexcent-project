@@ -8,3 +8,6 @@
   --color-gray-color: #4D4D4D; 
   --color-para-color: #717171; 
 }
+body{
+   overflow-x: hidden;
+}
