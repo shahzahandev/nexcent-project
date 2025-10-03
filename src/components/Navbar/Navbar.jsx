@@ -4,13 +4,12 @@ import Container from '../Layout/Container'
 import { ImCross } from "react-icons/im";
 import { FaBars } from "react-icons/fa";
 
-
-
 const Navbar = () => {
     const [show, setShow] = useState(false)
     return (
         <div className="font-primary py-[30px] bg-gray-300 md:bg-[#F5F7FA]">
             <Container>
+                {/* for big device */}
                 <div className="hidden md:flex justify-between items-center" >
                     <div>
                         <img src={navlogo} alt="" />
@@ -29,7 +28,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-
+                {/* for small device */}
                 <div className="md:hidden flex space-x-[150px] transition-all duration-900 ease-in-out" >
                     <div>
                         <img src={navlogo} alt="" />
