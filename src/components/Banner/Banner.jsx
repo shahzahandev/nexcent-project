@@ -13,7 +13,7 @@ const Banner = () => {
                     <button className="font-primary text-[12px] md:text-[16px] leading-[24px] text-[#ffffff] py-[6px] md:py-[14px] px-[20px] md:px-[32px] mt-[10px] md:mt-[32px] bg-green-color rounded-[8px] transition-all duration-300 hover:text-black hover:bg-gray-400">Register</button>
                 </div>
                 <div>
-                    <img src={banner} alt="" className="w-[25%] md:w-auto"/>
+                    <img src={banner} alt="" className=" md:w-auto"/>
                 </div>
             </div>
         </Container>
