@@ -39,15 +39,15 @@ const Navbar = () => {
                             show ? (
                                 <div className="transition-all duration-500  text-center py-[20px] absolute  top-[80px] left-0 bg-gray-300 w-full z-[99999] ">
                                     <ul className="flex flex-col space-y-[30px]">
-                                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><a href="">Home</a></li>
-                                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><a href="">Service</a></li>
-                                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><a href="">Product</a></li>
-                                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><a href="">Feature</a></li>
-                                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><a href="">Testimonial</a></li>
-                                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><a href="">FAQ</a></li>
+                                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><Link to="/banner">Home</Link></li>
+                                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><Link to="/desi">Service</Link></li>
+                                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><Link to="/manage">Product</Link></li>
+                                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><Link to="/unseen">Feature</Link></li>
+                                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><Link to="/design">Testimonial</Link></li>
+                                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><Link to="/caring">FAQ</Link></li>
                                     </ul>
                                     <div className="mt-[20px] text-center space-x-5">
-                                        <button className="py-[10px] px-[20px] rounded-[8px] text-[14px] leading-[20px] font-medium text-white bg-green-color transition-all duration-300 hover:text-green-color hover:bg-transparent">Login</button>
+                                        <button className="py-[10px] px-[20px] rounded-[8px] text-[14px] leading-[20px] font-medium text-white bg-green-color transition-all duration-300 hover:text-green-color hover:bg-transparent"><Link to="/footer">Login</Link></button>
                                         <button className="py-[10px] px-[20px] rounded-[8px] text-[14px] leading-[20px] font-medium text-[#FFFFFF] bg-green-color transition-all duration-300 hover:text-green-color hover:bg-transparent">Sign up</button>
                                     </div>
                                 </div>
