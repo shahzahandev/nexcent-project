@@ -3,6 +3,7 @@ import navlogo from "../../assets/nav-logo.png"
 import Container from '../Layout/Container'
 import { ImCross } from "react-icons/im";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router";
 
 const Navbar = () => {
     const [show, setShow] = useState(false)
@@ -15,15 +16,15 @@ const Navbar = () => {
                         <img src={navlogo} alt="" />
                     </div>
                     <ul className="hidden md:flex space-x-[50px]">
-                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><a href="">Home</a></li>
-                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><a href="">Service</a></li>
-                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><a href="">Product</a></li>
-                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><a href="">Feature</a></li>
-                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><a href="">Testimonial</a></li>
-                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><a href="">FAQ</a></li>
+                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><Link to="/banner">Home</Link></li>
+                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><Link to="/desi">Service</Link></li>
+                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><Link to="/manage">Product</Link></li>
+                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><Link to="/unseen">Feature</Link></li>
+                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><Link to="/design">Testimonial</Link></li>
+                        <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-300 hover:text-green-color"><Link to="/caring">FAQ</Link></li>
                     </ul>
                     <div className="flex space-x-[14px]">
-                        <button className="py-[10px] px-[20px] rounded-[8px] text-[14px] leading-[20px] font-medium text-green-color bg-primary transition-all duration-300 hover:text-white hover:bg-green-color">Login</button>
+                        <button className="py-[10px] px-[20px] rounded-[8px] text-[14px] leading-[20px] font-medium text-green-color bg-primary transition-all duration-300 hover:text-white hover:bg-green-color"><Link to="/footer">Login</Link></button>
                         <button className="py-[10px] px-[20px] rounded-[8px] text-[14px] leading-[20px] font-medium text-[#FFFFFF] bg-green-color transition-all duration-300 hover:text-green-color hover:bg-transparent ">Sign up</button>
                     </div>
                 </div>

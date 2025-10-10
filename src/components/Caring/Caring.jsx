@@ -6,7 +6,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Caring = () => {
     return (
-        <div className="pt-[20px] md:pt-[48px] pb-[96px] font-primary bg-[#ffffff]">
+        <div className="pt-[20px] md:pt-[20px] pb-[96px] font-primary bg-[#ffffff]">
             <Container>
                 <div className="z-[99] md:text-center">
                     <h2 className="font-semibold text-[24px] md;text-[36px] leading-[44px] text-gray-color">Caring is the new marketing</h2>
