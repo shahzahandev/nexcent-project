@@ -10,7 +10,7 @@ import Caring from './components/Caring/Caring.jsx';
 import Desing2 from './components/Design2/Desing2.jsx';
 import Design from './components/Design/Design.jsx';
 import Footer from './components/Footer/Footer.jsx';
-
+import Helping from './components/Helping/Helping.jsx'
 
 const router = createBrowserRouter([
    {
@@ -24,6 +24,7 @@ const router = createBrowserRouter([
       {path: "/design", Component: Desing2},
       {path: "/caring", Component: Caring},
       {path: "/footer", Component: Footer},
+      {path: "/helping", Component: Helping},
     ]
    }
 ])
