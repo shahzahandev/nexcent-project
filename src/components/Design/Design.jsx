@@ -1,9 +1,12 @@
 import design from "../../assets/design.png"
+import Footer from "../Footer/Footer"
+import Frin from "../Frin/Frin"
 import Container from '../Layout/Container'
 
 const Design = () => {
   return (
-    <div className="font-primary py-[20px] md:py-[50px] bg-[#FFFFFF]">
+    <>
+      <div className="font-primary pt-[100px] pb-[50px] md:pt-[160px] md:pb-[25px] bg-[#FFFFFF]">
         <Container>
             <div className="md:flex space-x-[50px] space-y-4 md:space-y-0">
                     <img src={design} alt="" className=" md:w-[100%]" />
@@ -16,6 +19,10 @@ const Design = () => {
             </div>
         </Container>
     </div>
+     <Frin></Frin>
+     <Footer></Footer>
+    </>
+  
   )
 }
 

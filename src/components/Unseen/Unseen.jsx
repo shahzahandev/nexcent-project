@@ -1,12 +1,15 @@
 import unseen from "../../assets/unseen.png"
+import Footer from "../Footer/Footer"
 import Container from '../Layout/Container'
+
 
 const Unseen = () => {
   return (
-    <div className="font-primary py-[20px] md:py-[52px] bg-[#ffffff]">
+    <>
+      <div className="font-primary pt-[70px] pb-[20px] md:pt-[132px] md:pb-[50px] bg-[#ffffff]">
         <Container>
-            <div className="md:flex space-x-[50px] items-center">
-                    <img src={unseen} alt="" className=" md:w-[40%]"/>
+            <div className="md:flex space-x-[70px] items-center">
+                    <img src={unseen} alt="" className=""/>
                 <div>
                     <h2 className="font-semibold text-[24px] md:text-[36px] leading-[30px] md:leading-[44px] text-gray-color  w-[320px] md:w-[601px]">The unseen of spending three years at Pixelgrade</h2>
                     <p className="font-normal text-[14px] leading-[20px] text-para-color mt-[10px] md:mt-[16px] w-[320px] md:w-[601px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
@@ -15,6 +18,8 @@ const Unseen = () => {
             </div>
         </Container>
     </div>
+    <Footer></Footer>
+    </>
   )
 }
 

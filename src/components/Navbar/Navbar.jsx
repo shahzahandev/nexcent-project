@@ -8,7 +8,7 @@ import { NavLink } from "react-router";
 const Navbar = () => {
     const [show, setShow] = useState(false)
     return (
-        <div className="font-primary py-[30px] bg-gray-500 md:bg-[#F5F7FA]">
+        <div className="fixed z-[9999999] mx-auto w-full font-primary py-[30px] bg-gray-400 md:bg-[#F5F7FA]">
             <Container>
                 {/* for big device */}
                 <div className="hidden md:flex justify-between items-center" >
@@ -24,20 +24,20 @@ const Navbar = () => {
                         <NavLink to="/caring" className={(e) => {return e.isActive ? "active" : ""}}> <li className="font-medium text-[16px] leading-[24px] text-[#18191f] transition-all duration-100 hover:text-green-color">FAQ</li></NavLink>
                     </ul>
                     <div className="flex space-x-[14px]">
-                        <NavLink to="/footer" className={(e) => {return e.isActive ? "active" : ""}}><button className="py-[10px] px-[20px] rounded-[8px] text-[14px] leading-[20px] font-medium text-green-color bg-primary transition-all duration-300 hover:text-white hover:bg-green-color">Login</button></NavLink>
-                        <NavLink to="/helping" className={(e) => {return e.isActive ? "active" : ""}}> <button className="py-[10px] px-[20px] rounded-[8px] text-[14px] leading-[20px] font-medium text-[#FFFFFF] bg-green-color transition-all duration-300 hover:text-green-color hover:bg-transparent ">Sign up</button></NavLink>
+                        <NavLink to="/" className={(e) => {return e.isActive ? "active" : ""}}><button className="py-[10px] px-[20px] rounded-[8px] text-[14px] leading-[20px] font-medium text-green-color bg-primary transition-all duration-300 hover:text-white hover:bg-green-color">Login</button></NavLink>
+                        <NavLink to="/" className={(e) => {return e.isActive ? "active" : ""}}> <button className="py-[10px] px-[20px] rounded-[8px] text-[14px] leading-[20px] font-medium text-[#FFFFFF] bg-green-color transition-all duration-300 hover:text-green-color hover:bg-transparent ">Sign up</button></NavLink>
                     </div>
                 </div>
 
                 {/* for small device */}
-                <div className="md:hidden flex space-x-[150px] transition-all duration-900 ease-in-out" >
+                <div className="md:hidden flex justify-between transition-all duration-900 ease-in-out" >
                     <div>
                         <img src={navlogo} alt="" />
                     </div>
                     <div>
                         {
                             show ? (
-                                <div className="transition-all duration-500  text-center py-[20px] absolute  top-[80px] right-0 bg-gray-700 w-1/4 z-[99999] ">
+                                <div className="transition-all duration-500  text-center py-[25px] absolute  top-[84px] right-0 bg-gray-500/90 w-1/4 z-[99999] rounded-bl-2xl ">
                                     <div className="">
                                        <ul className="flex flex-col space-y-[30px]">
 
@@ -48,16 +48,16 @@ const Navbar = () => {
                                         <NavLink to="/design" className={(e) => {return e.isActive ? "active" : ""}}><li className="font-medium text-[14px] leading-[24px] text-white transition-all duration-100 hover:text-green-color">Testimonial</li></NavLink>
                                         <NavLink to="/caring" className={(e) => {return e.isActive ? "active" : ""}}><li className="font-medium text-[14px] leading-[24px] text-white transition-all duration-100 hover:text-green-color">FAQ</li></NavLink>
                                     </ul>
-                                    <div className=" flex flex-col mt-[20px] text-center space-x-5 space-y-5 ">
-                                        <NavLink to="/footer" className={(e) => {return e.isActive ? "active" : ""}}> <button className="py-[10px] px-[20px] rounded-[8px] text-[14px] leading-[20px] ml-2 font-medium text-white bg-green-color transition-all duration-300 hover:text-green-color hover:bg-transparent">Login</button></NavLink>
-                                        <NavLink to="/helping" className={(e) => {return e.isActive ? "active" : ""}}>   <button className="py-[10px] px-[20px] rounded-[8px] text-[14px] leading-[20px] font-medium text-[#FFFFFF] bg-green-color transition-all duration-300 hover:text-green-color hover:bg-transparent">Sign up</button></NavLink>
+                                    <div className=" flex flex-col mt-[20px] text-center space-x-4 space-y-4 ">
+                                        <NavLink to="/" className={(e) => {return e.isActive ? "active" : ""}}> <button className="py-[10px] px-[15px] rounded-[8px] text-[14px] leading-[20px] ml-4 font-medium text-white bg-green-color transition-all duration-300 hover:text-green-color hover:bg-transparent">Login</button></NavLink>
+                                        <NavLink to="/" className={(e) => {return e.isActive ? "active" : ""}}>   <button className="py-[10px] px-[15px]  rounded-[8px] text-[14px] leading-[20px] font-medium text-[#FFFFFF] bg-green-color transition-all duration-300 hover:text-green-color hover:bg-transparent">Sign up</button></NavLink>
                                     </div>
                                     </div>
                                   
                                 </div>
                             ) : ("")
                         }
-                        <div className="transition-all duration-900">
+                        <div className="transition-all duration-300">
                             {
                                 show ? (<ImCross onClick={() => setShow(!show)} className="text-red-500  text-2xl animate-pulse" />
                                 ) : (<FaBars onClick={() => setShow(!show)} className="text-black text-2xl animate-bounce" />

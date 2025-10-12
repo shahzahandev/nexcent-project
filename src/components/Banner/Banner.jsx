@@ -4,7 +4,8 @@ import Container from '../Layout/Container'
 const Banner = () => {
   return (
     // banner part start
-    <div className='py-[30px] md:py-[96px] bg-[#F5F7FA] font-primary'>
+    <>
+      <div className='py-[100px] md:py-[161px] bg-[#F5F7FA] font-primary'>
         <Container>
             <div className="md:flex space-x-[104px]">
                 <div>
@@ -17,7 +18,8 @@ const Banner = () => {
                 </div>
             </div>
         </Container>
-    </div>
+    </div> 
+    </>
   )
 }
 

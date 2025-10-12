@@ -2,10 +2,14 @@ import manage1 from "../../assets/manage1.png"
 import manage2 from "../../assets/manage2.png"
 import manage3 from "../../assets/manage3.png"
 import Container from '../Layout/Container'
+import Helping from "../Helping/Helping"
+import Client from "../../components/Client/Client"
+import Footer from "../Footer/Footer"
 
 const Manage = () => {
   return (
-    <div className='font-primary py-[40px] bg-[#ffffff]'>
+   <>
+       <div className='font-primary pt-[120px] pb-[50px]  md:pt-[160px] md:pb-[80px] bg-[#ffffff]'>
         <Container>
             <div className='md:text-center'>
                 <h2 className='font-semibold text-[24px] md:text-[36px] text-gray-color md:leading-[44px] w-[350px] md:w-[542px] md:mx-auto'> Manage your entire community in a single system</h2>
@@ -30,6 +34,10 @@ const Manage = () => {
             </div>
         </Container>
     </div>
+      <Helping></Helping>
+      <Client></Client>
+      <Footer></Footer>
+   </>
   )
 }
 
