@@ -41,7 +41,7 @@ const Navbar = () => {
                         <div>
                             {
                                 show ? (
-                                    <div className="transition-all duration-500  text-center py-[25px] absolute  top-[100px] right-0 bg-gray-500/90 w-1/4 z-[99999] rounded-bl-2xl ">
+                                    <div className="transition-all duration-500  text-center py-[25px] absolute  top-[92px] right-0 bg-gray-500/80 w-1/4 z-[99999] rounded-bl-2xl ">
                                         <div className="">
                                             <ul className="flex flex-col space-y-[30px]">
 
@@ -60,8 +60,8 @@ const Navbar = () => {
                             }
                             <div className="transition-all duration-300">
                                 {
-                                    show ? (<ImCross onClick={() => setShow(!show)} className="text-red-500  text-2xl animate-pulse" />
-                                    ) : (<FaBars onClick={() => setShow(!show)} className="text-black text-2xl animate-bounce" />
+                                    show ? (<ImCross onClick={() => setShow(!show)} className="text-red-500  text-[20px] animate-pulse" />
+                                    ) : (<FaBars onClick={() => setShow(!show)} className="text-black text-[20px] animate-bounce" />
                                     )
                                 }
                             </div>
