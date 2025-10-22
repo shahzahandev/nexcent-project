@@ -9,18 +9,20 @@ import Unseen from './components/Unseen/Unseen.jsx';
 import Caring from './components/Caring/Caring.jsx';
 import Desing2 from './components/Design2/Desing2.jsx';
 import Design from './components/Design/Design.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 const router = createBrowserRouter([
    {
     path: "/",
     Component: MainRoot,
     children: [
-      {path: "/banner", Component: Banner},
+      {path: "/", Component: Banner},
       {path: "/desi", Component: Manage},
       {path: "/manage", Component: Design},
       {path: "/unseen", Component: Unseen},
       {path: "/design", Component: Desing2},
       {path: "/caring", Component: Caring},
+      {path: "/nav", Component: Footer},
     ]
    }
 ])

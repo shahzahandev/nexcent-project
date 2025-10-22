@@ -2,9 +2,6 @@ import manage1 from "../../assets/manage1.png"
 import manage2 from "../../assets/manage2.png"
 import manage3 from "../../assets/manage3.png"
 import Container from '../Layout/Container'
-import Helping from "../Helping/Helping"
-import Client from "../../components/Client/Client"
-import Footer from "../Footer/Footer"
 
 const Manage = () => {
   return (
@@ -34,9 +31,6 @@ const Manage = () => {
             </div>
         </Container>
     </div>
-      <Helping></Helping>
-      <Client></Client>
-      <Footer></Footer>
    </>
   )
 }

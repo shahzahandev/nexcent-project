@@ -7,9 +7,9 @@ import { CiYoutube } from "react-icons/ci";
 
 const Footer = () => {
   return (
-    <div className='font-primary py-[30px] md:py-[64px] bg-[#263238]'>
+    <div className='font-primary py-[30px] md:py-[64px] bg-[#263238] mt-[]'>
         <Container>
-            <div className='md:flex justify-between space-y-[40px] md:space-y-0'>
+            <div className='md:flex justify-between space-y-[40px] md:space-y-0 mt-[100px]'>
                 <div>
                     <img src={footer} alt="" />
                     <p className=' mt-[20px] md:mt-[40px] font-normal text-[14px] leading-[24px] text-[#F5F7FA] '>Copyright © 2025 Nexcent ltd.</p>

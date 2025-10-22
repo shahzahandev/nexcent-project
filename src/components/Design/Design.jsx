@@ -1,6 +1,4 @@
 import design from "../../assets/design.png"
-import Footer from "../Footer/Footer"
-import Frin from "../Frin/Frin"
 import Container from '../Layout/Container'
 
 const Design = () => {
@@ -19,8 +17,6 @@ const Design = () => {
             </div>
         </Container>
     </div>
-     <Frin></Frin>
-     <Footer></Footer>
     </>
   
   )

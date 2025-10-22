@@ -47,7 +47,6 @@ const Caring = () => {
 
             </Container>
         </div>
-        <Footer></Footer>
        </>
     )
 }

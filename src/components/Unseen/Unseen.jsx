@@ -1,7 +1,5 @@
 import unseen from "../../assets/unseen.png"
-import Footer from "../Footer/Footer"
 import Container from '../Layout/Container'
-
 
 const Unseen = () => {
   return (
@@ -18,7 +16,6 @@ const Unseen = () => {
             </div>
         </Container>
     </div>
-    <Footer></Footer>
     </>
   )
 }

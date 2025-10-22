@@ -6,7 +6,6 @@ import client5 from "../../assets/client5.png"
 import client6 from "../../assets/client6.png"
 import client7 from "../../assets/client7.png"
 import design2 from "../../assets/design2.png"
-import Footer from "../Footer/Footer"
 import Container from '../Layout/Container'
 import { FaLongArrowAltRight } from "react-icons/fa";
 
@@ -40,7 +39,6 @@ const Desing2 = () => {
                 </div>
             </Container>
         </div>
-         <Footer></Footer>
        </>
     )
 }
